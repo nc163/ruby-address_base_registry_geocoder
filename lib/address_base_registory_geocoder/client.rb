@@ -2,7 +2,6 @@
 
 require 'faraday'
 require 'json'
-require_relative 'connection'
 require_relative 'responses'
 require_relative 'http'
 require_relative 'error_handler'
