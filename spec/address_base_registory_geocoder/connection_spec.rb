@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-describe AddressBaseRegistory::Connection do
+describe AddressBaseRegistoryGeocoder::Connection do
   describe '.build' do
     let(:base_url) { 'http://localhost:3030/' }
 

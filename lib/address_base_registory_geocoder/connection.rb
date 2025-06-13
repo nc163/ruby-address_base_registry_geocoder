@@ -2,7 +2,7 @@
 
 require 'faraday'
 
-module AddressBaseRegistory
+module AddressBaseRegistoryGeocoder
   class Connection
     def self.build(base_url)
       Faraday.new(url: base_url) do |conn|

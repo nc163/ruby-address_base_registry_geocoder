@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ruby-address_base_registory (0.0.1)
+    ruby-address_base_registory_geocoder (0.0.1)
       faraday (>= 1)
 
 GEM
@@ -39,7 +39,7 @@ PLATFORMS
 
 DEPENDENCIES
   rspec (~> 3.0)
-  ruby-address_base_registory!
+  ruby-address_base_registory_geocoder!
 
 BUNDLED WITH
    2.6.3

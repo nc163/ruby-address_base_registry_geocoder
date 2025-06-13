@@ -2,6 +2,6 @@
 
 require "spec_helper"
 
-describe AddressBaseRegistory do
+describe AddressBaseRegistoryGeocoder do
 
 end

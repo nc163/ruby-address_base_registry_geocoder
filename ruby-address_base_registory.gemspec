@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-require_relative "lib/address_base_registory/version"
+require_relative "lib/address_base_registory_geocoder/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "ruby-address_base_registory"
-  spec.version       = AddressBaseRegistory::VERSION
+  spec.name          = "ruby-address_base_registory_geocoder"
+  spec.version       = AddressBaseRegistoryGeocoder::VERSION
   spec.authors       = ["nc163"]
   spec.email         = ["kou1992@gmail.com"]
 
-  spec.summary       = ""
+  spec.summary       = "AddressBaseRegistoryGeocoder API client"
   spec.description   = ""
   spec.homepage      = "https://github.com/nc163"
   spec.license       = "MIT"

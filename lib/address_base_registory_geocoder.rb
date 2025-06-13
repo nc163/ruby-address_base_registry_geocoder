@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require "address_base_registory/client"
-require "address_base_registory/version"
+require "address_base_registory_geocoder/client"
+require "address_base_registory_geocoder/version"
 
 #
-module AddressBaseRegistory
+module AddressBaseRegistoryGeocoder
   class Error < StandardError; end
   class ConfigurationError < Error; end
   class AuthenticationError < Error; end

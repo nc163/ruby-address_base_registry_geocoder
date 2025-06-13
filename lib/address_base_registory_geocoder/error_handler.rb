@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module AddressBaseRegistory
+module AddressBaseRegistoryGeocoder
   class ErrorHandler < StandardError
     attr_reader :status, :body
 

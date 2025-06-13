@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module AddressBaseRegistory
+module AddressBaseRegistoryGeocoder
   module HTTPHeaders
     def self.default_headers
       {

@@ -1,9 +1,9 @@
 # # frozen_string_literal: true
 
 # require 'spec_helper'
-# require 'address_base_registory/client'
+# require 'address_base_registory_geocoder/client'
 
-# describe AddressBaseRegistory::Client do
+# describe AddressBaseRegistoryGeocoder::Client do
 #   let(:base_url) { 'http://localhost:3030' }
 #   let(:api_key) { 'test_api_key' }
 #   let(:client) { described_class.new }
@@ -36,7 +36,7 @@
 #     end
 
 #     it 'raises an error with status and body' do
-#       expect { client.geocode(address) }.to raise_error(AddressBaseRegistory::ErrorHandler) do |error|
+#       expect { client.geocode(address) }.to raise_error(AddressBaseRegistoryGeocoder::ErrorHandler) do |error|
 #         expect(error.status).to eq(400)
 #         expect(error.body).to eq('Bad Request')
 #       end
