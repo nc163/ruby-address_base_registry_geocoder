@@ -8,15 +8,15 @@ Gem::Specification.new do |spec|
   spec.authors       = ["nc163"]
   spec.email         = ["kou1992@gmail.com"]
 
-  spec.summary       = "AddressBaseRegistoryGeocoder API client"
+  spec.summary       = "abr-geocoder API client"
   spec.description   = ""
-  spec.homepage      = "https://github.com/nc163"
+  spec.homepage      = "https://github.com/nc163/ruby-address_base_registory_geocoder"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 3.3.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/nc163"
-  spec.metadata["changelog_uri"] = "https://github.com/nc163"
+  spec.metadata["source_code_uri"] = spec.homepage
+  spec.metadata["changelog_uri"] = spec.homepage
 
   spec.files = Dir[
     "lib/**/*.rb",

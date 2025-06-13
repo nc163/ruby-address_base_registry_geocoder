@@ -8,9 +8,7 @@ RSpec.configure do |rspec_config|
 
   rspec_config.before(:all) do
     AddressBaseRegistoryGeocoder::configure do |config|
-      config.scheme = "http"
-      config.host = "127.0.0.1"
-      config.port = 3002
+      config.url = "http://127.0.0.1:3030"
     end
   end
 

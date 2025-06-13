@@ -10,22 +10,18 @@ module AddressBaseRegistoryGeocoder
   class AuthenticationError < Error; end
 
   class Configuration
-    attr_accessor :scheme
-    attr_accessor :host
-    attr_accessor :port
+    attr_accessor :url
 
     def initialize
-      @scheme = 'http'
-      @host = '127.0.0.1'
-      @port = 3002
+      @url = 'http://127.0.0.1:3000'
     end
 
     def url
-      "#{@scheme}://#{@host}:#{@port}"
+      @url
     end
 
     def uri 
-      URI.parse(url)
+      @uri ||= URI.parse(url)
     end
   end
 
