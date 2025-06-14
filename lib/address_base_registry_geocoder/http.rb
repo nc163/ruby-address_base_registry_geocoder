@@ -2,7 +2,7 @@
 
 require_relative "http_headers"
 
-module AddressBaseRegistoryGeocoder
+module AddressBaseRegistryGeocoder
   module HTTP
     include HTTPHeaders
 

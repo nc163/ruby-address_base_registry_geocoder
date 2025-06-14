@@ -6,12 +6,12 @@ require_relative 'responses'
 require_relative 'http'
 require_relative 'error_handler'
 
-module AddressBaseRegistoryGeocoder
+module AddressBaseRegistryGeocoder
   class Client
-    include AddressBaseRegistoryGeocoder::HTTP
+    include AddressBaseRegistryGeocoder::HTTP
 
     def initialize(uri_base = nil)
-      self.uri_base = uri_base.nil? ? AddressBaseRegistoryGeocoder.configuration.uri 
+      self.uri_base = uri_base.nil? ? AddressBaseRegistryGeocoder.configuration.uri 
                                : URI.parse(uri_base)
     end
 
@@ -20,7 +20,7 @@ module AddressBaseRegistoryGeocoder
       response = get uri(path: '/geocode', parameters: { address: address })
       
       if response.success?
-        AddressBaseRegistoryGeocoder::Responses::GeocodeResponse.new(response.body)
+        AddressBaseRegistryGeocoder::Responses::GeocodeResponse.new(response.body)
       else
         handle_error(response)
       end
@@ -36,7 +36,7 @@ module AddressBaseRegistoryGeocoder
 
     # エラーハンドリング
     def handle_error(response)
-      raise AddressBaseRegistoryGeocoder::ErrorHandler.new(response.status, response.body)
+      raise AddressBaseRegistryGeocoder::ErrorHandler.new(response.status, response.body)
     end
   end
 end

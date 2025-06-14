@@ -2,9 +2,9 @@
 
 require "spec_helper"
 
-describe AddressBaseRegistoryGeocoder::Responses do
+describe AddressBaseRegistryGeocoder::Responses do
   
-  describe AddressBaseRegistoryGeocoder::Responses::GeocodeResponse do
+  describe AddressBaseRegistryGeocoder::Responses::GeocodeResponse do
     let(:response_body) do
       [
         {
@@ -15,7 +15,7 @@ describe AddressBaseRegistoryGeocoder::Responses do
     end
 
     it "creates a GeocodeResponse" do
-      expect(described_class.new(response_body)).to be_a(AddressBaseRegistoryGeocoder::Responses::GeocodeResponse)
+      expect(described_class.new(response_body)).to be_a(AddressBaseRegistryGeocoder::Responses::GeocodeResponse)
     end
 
   end

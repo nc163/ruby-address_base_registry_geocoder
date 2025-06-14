@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-require 'address_base_registory_geocoder/client'
+require 'address_base_registry_geocoder/client'
 
-describe AddressBaseRegistoryGeocoder::Client do
+describe AddressBaseRegistryGeocoder::Client do
   let(:base_url) { 'http://geocoder:3030' }
   let(:client) { described_class.new(base_url) }
 
@@ -13,7 +13,7 @@ describe AddressBaseRegistoryGeocoder::Client do
 
     it 'is geocode response' do
       response = client.geocode(address)
-      expect(response).to be_a(AddressBaseRegistoryGeocoder::Responses::GeocodeResponse)
+      expect(response).to be_a(AddressBaseRegistryGeocoder::Responses::GeocodeResponse)
       # response.outputが、address から変わってることだけ判定したい
       expect(response.output).not_to eq(address)
     end

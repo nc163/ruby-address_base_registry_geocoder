@@ -1,3 +1,3 @@
 # frozen_string_literal: true
 
-require_relative "../address_base_registory_geocoder"
+require_relative "../address_base_registry_geocoder"
